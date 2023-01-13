@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body >
+    <div class="dom"></div>
+        <div>
+            <h1>Título da página</h1>
+            <p name="teste">Este é o parágrafo</p>
+        </div>
+        <div class="principal">
+            <section name="init">
+                <h2>Seção init</h2>
+                <p>Este é o parágrafo 2</p>
+            </section>
+            <section name="middle">
+                <h2>Seção middle</h2>
+                <p>Este é o parágrafo 22222</p>
+            </section>
+        </div>
+        
+        <input type="button" value="buscar parágrafo" onclick="bucarP()">
+    </div>
+    <div class="querySelector">
+
+        <form> 
+            <p><tt>Text</tt></p> <!-- tt deixar o texto mais gordinho-->
+
+            <select onchange="setBodyAttr('text', this.options[this.selectedIndex].value)"> <!-- quando muda as opções -->
+                <!--dessas opções pega a selecionada . value-->
+                <option value="black">Preto</option>
+                <option value="pink">Rosa</option>
+                <option value="red">Vermelho</option>
+                <option value="purple">Roxo</option>
+                <option value="yellow">Amarelo</option>
+                <option value="orange">Laranja</option>
+                <option value="blue">Azul</option>
+                <option value="lightblue">Azul Claro</option>
+                <option value="darkBlue">Azul Escuro</option>
+                <option value="green">Verde</option>
+                <option value="Lightgreen">Verde Claro</option>
+                <option value="Darkgreen">Verde Escuro</option>
+            </select>
+
+            <p><tt>background</tt></p> <!-- tt deixar o texto mais gordinho-->
+            <select onchange="setBodyAttr('bgColor', this.options[this.selectedIndex].value)"> <!-- quando muda as opções -->
+                <!--dessas opções pega a selecionada . value-->
+                <option value="gray">Cinza</option>
+                <option value="pink">Rosa</option>
+                <option value="red">Vermelho</option>
+                <option value="purple">Roxo</option>
+                <option value="yellow">Amarelo</option>
+                <option value="orange">Laranja</option>
+                <option value="blue">Azul</option>
+                <option value="lightblue">Azul Claro</option>
+                <option value="green">Verde</option>
+                <option value="Lightgreen">Verde Claro</option>
+            </select>
+
+            <p><tt>Link</tt></p> <!-- tt deixar o texto mais gordinho-->
+            <select onchange="setBodyAttr('link', this.options[this.selectedIndex].value)"> <!-- quando muda as opções -->
+                <!--dessas opções pega a selecionada . value-->
+                <option value="black">Preto</option>
+                <option value="pink">Rosa</option>
+                <option value="red">Vermelho</option>
+                <option value="purple">Roxo</option>
+                <option value="yellow">Amarelo</option>
+                <option value="orange">Laranja</option>
+                <option value="blue">Azul</option>
+                <option value="lightblue">Azul Claro</option>
+                <option value="darkBlue">Azul Escuro</option>
+                <option value="green">Verde</option>
+                <option value="Lightgreen">Verde Claro</option>
+                <option value="Darkgreen">Verde Escuro</option>
+            </select>
+            <a href="http://www.google.com"  target="_blank">link</a>
+
+            <p><tt>teste</tt></p> <!-- tt deixar o texto mais gordinho-->
+            <select onchange="console.log('esse é o conteudo do this:', this); console.log('esse é o conteudo do this.options:', this.options); console.log('esse é o conteudo do this.selectedIndex:', this.selectedIndex);"> <!-- quando muda as opções -->
+                <!--dessas opções pega a selecionada . value-->
+                <option value="gray">Cinza</option>
+                <option value="pink">Rosa</option>
+                <option value="red">Vermelho</option>
+                <option value="purple">Roxo</option>
+                <option value="yellow">Amarelo</option>
+                <option value="orange">Laranja</option>
+                <option value="blue">Azul</option>
+                <option value="lightblue">Azul Claro</option>
+                <option value="green">Verde</option>
+                <option value="Lightgreen">Verde Claro</option>
+            </select>
+
+
+        </form>
+
+        
+        
+    </div>
+    <script src="js/buscas.js"></script>
+</body>
+</html>
+
+<!---->
